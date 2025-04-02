@@ -1,15 +1,43 @@
-import { Text, View } from "react-native";
+import React from 'react';
+import { View, Text, Pressable, StyleSheet } from 'react-native';
+import { useRouter } from 'expo-router';
 
-export default function Nastroje() {
+const NavigationBars: React.FC = () => {
+  const router = useRouter();
+
+  const handleNavigation = (path: string) => {
+    router.push(path);
+  };
+
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/Nastroje.tsx to edit this screen.</Text>
+    <View style={styles.container}>
+      <Pressable style={styles.bar} onPress={() => handleNavigation('/_nastroje/pokosova_pila')}>
+        <Text style={styles.barText}>Pokosová pila</Text>
+      </Pressable>
     </View>
   );
-}
+};
+
+export default NavigationBars;
+
+const styles = StyleSheet.create({
+  container: {
+    padding: 16,
+  },
+  bar: {
+    backgroundColor: '#f0f0f0',
+    paddingVertical: 15,
+    paddingHorizontal: 10,
+    borderRadius: 8,
+    marginBottom: 10,
+    // Optionally, add a shadow for iOS and elevation for Android:
+    shadowColor: '#000',
+    shadowOpacity: 0.1,
+    shadowRadius: 5,
+    elevation: 2,
+  },
+  barText: {
+    fontSize: 16,
+    color: '#333',
+  },
+});
