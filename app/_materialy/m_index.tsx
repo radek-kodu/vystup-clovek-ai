@@ -7,9 +7,10 @@ export default function Materialy() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: '#baa89b',
       }}
     >
-      <Text>Edit app/Materialy.tsx to edit this screen.</Text>
+      <Text>Edit app/_materialy/Materialy.tsx to edit this screen.</Text>
     </View>
   );
 }

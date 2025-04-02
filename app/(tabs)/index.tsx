@@ -17,9 +17,6 @@ const NavigationBars: React.FC = () => {
       <Pressable style={styles.bar} onPress={() => handleNavigation('/_nastroje/n_index')}>
         <Text style={styles.barText}>Nástroje</Text>
       </Pressable>
-      <Pressable style={styles.bar} onPress={() => handleNavigation('/page3')}>
-        <Text style={styles.barText}>Go to Page 3</Text>
-      </Pressable>
     </View>
   );
 };
@@ -28,22 +25,20 @@ export default NavigationBars;
 
 const styles = StyleSheet.create({
   container: {
-    padding: 16,
+    flex: 1,
+    paddingTop: 15,
+    backgroundColor: '#baa89b',
   },
   bar: {
-    backgroundColor: '#f0f0f0',
+    backgroundColor: '#523a28',
     paddingVertical: 15,
-    paddingHorizontal: 10,
-    borderRadius: 8,
     marginBottom: 10,
-    // Optionally, add a shadow for iOS and elevation for Android:
     shadowColor: '#000',
-    shadowOpacity: 0.1,
-    shadowRadius: 5,
-    elevation: 2,
   },
   barText: {
+    paddingLeft: 10,
     fontSize: 16,
-    color: '#333',
+    color: 'white',
+    fontWeight: 'bold',
   },
 });

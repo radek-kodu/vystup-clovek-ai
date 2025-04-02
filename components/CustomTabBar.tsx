@@ -13,7 +13,7 @@ export const CustomTabBar = () => {
     <View style={styles.tabBar}>
       <TouchableOpacity
         style={styles.tabItem}
-        onPress={() => router.push('/(tabs)/index')}
+        onPress={() => router.push('/(tabs)')}
       >
         <Ionicons
           name="book-outline"

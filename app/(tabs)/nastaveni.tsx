@@ -7,6 +7,7 @@ export default function Nastaveni() {
         flex: 1,
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: '#baa89b',
       }}
     >
       <Text>Edit app/Nastaveni.tsx to edit this screen.</Text>
