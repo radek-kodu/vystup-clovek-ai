@@ -1,4 +1,5 @@
-# Welcome to your Expo app 👋
+# Jeden z vytvořených výstupů. V tomto případě člověkem s pomocí AI.
+## Pro správnou instalaci a vyzkoušení vytvořeného kódu postupujte dle následujících instrukcí:
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
